@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Tech Solution</title>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<style>
+        .blog2{
+                padding: 20px;
+                border-radius: 10px;
+                background-color: white;
+                border: 1px solid black;
+                text-align: left;
+                width:80%;
+                margin: 20px;
+        }
+        body {
+
+                font-family: cursive;
+                background-color: skyblue ;
+
+        }
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: rgb(0, 6, 51);
+          padding: 1em 2em;
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+          transition: background-color 0.3s ease;
+        }
+
+        .navbar:hover {
+          background: rgb(0, 6, 51);
+        }
+
+        .logo {
+          font-size: 1.5em;
+          color: #e0f0ff;
+          font-weight: bold;
+        }
+
+        .menu-icon {
+          display: none;
+          cursor: pointer;
+          color: #e0f0ff;
+        }
+
+        .nav-links {
+          list-style: none;
+          display: flex;
+          gap: 1em;
+        }
+
+        .nav-links li {
+          position: relative;
+          overflow: hidden;
+        }
+
+        .nav-links a {
+          color: #e0f0ff;
+          text-decoration: none;
+          font-size: 1em;
+          padding: 0.5em 1em;
+          transition: background 0.3s, transform 0.3s;
+          display: flex;
+          align-items: center;
+        }
+
+        .nav-links a:hover {
+          background-color: #050851;
+          border-radius: 4px;
+          transform: scale(1.05);
+        }
+
+        .material-icons {
+          margin-right: 0.5em;
+          font-size: 1.2em;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+          .nav-links {
+              display: none;
+              flex-direction: column;
+              width: 100%;
+              background-color: #050833;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              text-align: center;
+              animation: slide-down 0.5s forwards;
+          }
+
+          .nav-links.active {
+              display: flex;
+          }
+
+          .menu-icon {
+              display: block;
+          }
+
+          .nav-links li {
+              width: 100%;
+          }
+
+          .nav-links a {
+              width: 100%;
+              justify-content: center;
+              padding: 1em;
+              transition: background 0.3s, transform 0.3s;
+          }
+        }
+</style>
+<body>
+          <nav class="navbar">
+            <div class="logo">
+              <a href="index.html"><img src="Tech_Solutions-Logo.png" alt="logo" style="width: 100px;"></a>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+              <span class="material-icons">menu</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+              <li><a href="index.html"><span class="material-icons">home</span> Home</a></li>
+              <li><a href="about.html"><span class="material-icons">business</span> About Company</a></li>
+              <li><a href="service.html"><span class="material-icons">build</span> Services</a></li>
+              <li><a href="blog.html"><span class="material-icons">rss_feed</span> Our Blog</a></li>
+              <li><a href="contact.html"><span class="material-icons">contact_mail</span> Contact Us</a></li>
+            </ul>
+          </nav>
+          <center>
+<div class="blog2">
+        <h1><u>"The Impact of Artificial Intelligence on Healthcare"</u></h1>
+        <img src="https://riseapps.co/wp-content/uploads/2023/08/How-AI-is-Used-in-Healthcare.png" style="height: 400px;"></a>
+        <p>Artificial Intelligence (AI) is transforming healthcare, from diagnosing diseases to personalizing treatment plans. This blog explores how AI is making healthcare more efficient, accurate, and accessible.</p>
+        
+  <p>AI algorithms can analyze medical images and data faster and more accurately than humans. For example, AI systems have been developed to detect conditions like cancer, heart disease, and diabetic retinopathy with remarkable precision, leading to earlier and more effective treatments.</p>
+        
+        <img src="https://images.squarespace-cdn.com/content/v1/5daddb33ee92bf44231c2fef/60533e7f-5ab0-4913-811c-9a4c56e93a5c/AI-in-healthcare2.jpg" style="height: 400px;"></a>
+  <p>AI enables personalized medicine by analyzing genetic, environmental, and lifestyle factors to tailor treatments to individual patients. This approach improves the effectiveness of treatments and reduces adverse effects, offering a more targeted approach to healthcare.</p>
+        
+  <p>Hospitals and clinics use AI to optimize scheduling, manage patient flow, and streamline administrative tasks. This reduces wait times, improves patient satisfaction, and allows healthcare professionals to focus more on patient care.
+</p>
+
+        <img src="https://cms-article.forbesindia.com/media/images/2023/Aug/img_215967_healthcareandai.jpg" style="height: 400px;"></a>
+  <p>While AI offers tremendous benefits, it also raises ethical concerns. Issues like data privacy, algorithmic bias, and the need for transparency must be addressed to ensure that AI in healthcare is used responsibly and equitably.
+</p>
+  <p>AI is revolutionizing healthcare by improving diagnostics, personalizing treatments, and enhancing operational efficiency. As technology advances, AI will play an increasingly vital role in delivering high-quality, patient-centered care.
+  </p>
+</div>
+            <footer style="background-color: black;color:white;padding: 5px;font-size: 0.9em;">
+              <center>
+                <p>2024 © All Rights Reserved by Tech Solutions</p>
+              </center>
+            </footer>
+</body>
+</html>  

@@ -1,0 +1,449 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+::selection{
+  background-color: #001f5c;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: 'Onest', sans-serif;
+  background-color: #0a0a0a;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(0, 6, 51);
+  padding: 1em 2em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+  background: rgb(0, 6, 51);
+}
+
+.logo {
+  font-size: 1.5em;
+  color: #e0f0ff;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: #e0f0ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+.nav-links li {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-links a {
+  color: #e0f0ff;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a:hover {
+  background-color: #050851;
+  border-radius: 4px;
+  transform: scale(1.05);
+}
+
+.material-icons {
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #050833;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      text-align: center;
+      animation: slide-down 0.5s forwards;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+
+  .nav-links li {
+      width: 100%;
+  }
+
+  .nav-links a {
+      width: 100%;
+      justify-content: center;
+      padding: 1em;
+      transition: background 0.3s, transform 0.3s;
+  }
+}
+
+/* Animations */
+@keyframes slide-down {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  background: radial-gradient(circle, rgba(0, 0, 139, 0.8) 0%, rgba(0, 0, 139, 0.8) 35%, rgba(0, 0, 139, 0.5) 70%, rgba(0, 0, 139, 0.3) 100%), url('images/pixel-background.png') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.hero-content {
+  max-width: 600px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+/* Fading Effect */
+body {
+  animation: fadeIn 2s ease-in;
+  -webkit-animation: fadeIn 2s ease-in;
+  -moz-animation: fadeIn 2s ease-in;
+  -o-animation: fadeIn 2s ease-in;
+  -ms-animation: fadeIn 2s ease-in;
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+.web-dev-high {
+  color: white;
+  background-color: blue;
+  text-shadow: black 1px 0px 9px;
+}
+
+.about-us-homepage {
+  font-family: "Lora", serif;
+  color: white;
+  padding: 20px;
+  max-width: 600px;
+  align-items: center;
+}
+
+.about-us-homepage h1 {
+  font-size: 60px;
+}
+
+.about-us-homepage-wrap{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+body:hover > #trailer {
+opacity: 1;
+}
+
+#trailer {
+height: 20px;
+width: 20px;
+background-color: white;
+border-radius: 20px;
+
+position: fixed;
+left: 0px;
+top: 0px;
+z-index: 10000;
+
+pointer-events: none;
+opacity: 0;
+transition: opacity 500ms ease;
+
+display: grid;
+place-items: center;
+}
+
+#trailer:not([data-type=""]) > #trailer-icon {
+opacity: 1;
+}
+
+#trailer-icon {
+font-size: 4px;
+line-height: 5px;
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+opacity: 0;
+transition: opacity 400ms ease;
+}
+
+.interactable {
+opacity: 0.8;
+
+transition: background-size 400ms ease, opacity 400ms ease;
+}
+
+.interactable:hover {
+opacity: 1;
+}
+
+.gradient {
+  height: 30vh; /* Adjust the height as needed */
+  background: linear-gradient(to bottom,#000000, #FF4500); /* Orange to black gradient */
+}
+
+.other-things-that-we-do{
+  background-color: #FF4500;
+  padding: 20px;
+  color: white;
+
+}
+.other-things-that-we-do-wrap{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ottwd{
+  text-align: left;
+  margin: 10px;
+  max-width: 43vw;
+}
+
+
+.gradient1 {
+  height: 30vh; /* Adjust the height as needed */
+  background: linear-gradient(to bottom,black,#FF4500); /* Orange to black gradient */
+}
+
+
+.gradient2 {
+  height: 30vh; /* Adjust the height as needed */
+  background: linear-gradient(to bottom,#FF4500, white); /* Orange to black gradient */
+}
+
+.gradient3 {
+  height: 30vh; /* Adjust the height as needed */
+  background: linear-gradient(to bottom,white, #010737); /* Orange to black gradient */
+}
+
+.gradient4 {
+  height: 30vh; /* Adjust the height as needed */
+  background: linear-gradient(to bottom,#010737, black); /* Orange to black gradient */
+}
+
+:root {
+--bg-color: rgb(20, 20, 20);
+--card-color: rgb(23, 23, 23);
+}
+
+#cards {
+display: flex;
+flex-wrap: wrap;
+gap: 8px;  
+width: calc(100% - 20px);
+justify-content: space-evenly;
+}
+
+#cards:hover > .card::after {
+opacity: 1;
+}
+
+.card {
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+cursor: pointer;
+display: flex;
+height: 400px;
+flex-direction: column;
+position: relative;
+width: 300px;  
+}
+
+.card:hover::before {
+opacity: 1;
+}
+
+.card::before,
+.card::after {
+border-radius: inherit;
+content: "";
+height: 100%;
+left: 0px;
+opacity: 0;
+position: absolute;
+top: 0px;
+transition: opacity 500ms;
+width: 100%;
+}
+
+.card::before {
+background: radial-gradient(
+  800px circle at var(--mouse-x) var(--mouse-y), 
+  rgba(255, 255, 255, 0.03),
+  transparent 30%
+);
+z-index: 3;
+}
+
+.card::after {  
+background: radial-gradient(
+  600px circle at var(--mouse-x) var(--mouse-y), 
+  rgba(255, 255, 255, 0.4),
+  transparent 40%
+);
+z-index: 1;
+}
+
+.card > .card-content {
+background-color: var(--card-color);
+border-radius: inherit;
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+inset: 1px;
+padding: 10px;
+position: absolute;
+z-index: 2;
+}
+
+h1, h2, h3, h4, span {
+color: rgb(240, 240, 240);
+}
+
+.card-image {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60%;
+width: 100%;
+}
+
+.card-image img {
+max-width: 100%;
+max-height: 100%;
+border-radius: 10px 10px 0 0;
+}
+
+.card-info-wrapper {
+align-items: center;
+display: flex;
+flex-grow: 1;
+justify-content: flex-start;
+padding: 0px 20px;
+}
+
+.card-info {
+align-items: flex-start;
+display: flex;
+gap: 10px;
+}
+
+.card-info > i {  
+font-size: 1em;
+height: 20px;
+line-height: 20px;
+}
+
+.card-info-title > h3 {
+font-size: 1.1em;
+line-height: 20px;
+}
+
+.card-info-title > h4 {
+color: rgba(255, 255, 255, 0.5);
+font-size: 0.85em;
+margin-top: 8px;
+}

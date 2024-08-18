@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Tech Solution</title>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<style>
+        .blog2{
+                padding: 20px;
+                border-radius: 10px;
+                background-color: white;
+                border: 1px solid black;
+                text-align: left;
+                width:80%;
+                margin: 20px;
+        }
+        body {
+
+                font-family: cursive;
+                background-color: skyblue ;
+
+        }
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: rgb(0, 6, 51);
+          padding: 1em 2em;
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+          transition: background-color 0.3s ease;
+        }
+
+        .navbar:hover {
+          background: rgb(0, 6, 51);
+        }
+
+        .logo {
+          font-size: 1.5em;
+          color: #e0f0ff;
+          font-weight: bold;
+        }
+
+        .menu-icon {
+          display: none;
+          cursor: pointer;
+          color: #e0f0ff;
+        }
+
+        .nav-links {
+          list-style: none;
+          display: flex;
+          gap: 1em;
+        }
+
+        .nav-links li {
+          position: relative;
+          overflow: hidden;
+        }
+
+        .nav-links a {
+          color: #e0f0ff;
+          text-decoration: none;
+          font-size: 1em;
+          padding: 0.5em 1em;
+          transition: background 0.3s, transform 0.3s;
+          display: flex;
+          align-items: center;
+        }
+
+        .nav-links a:hover {
+          background-color: #050851;
+          border-radius: 4px;
+          transform: scale(1.05);
+        }
+
+        .material-icons {
+          margin-right: 0.5em;
+          font-size: 1.2em;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+          .nav-links {
+              display: none;
+              flex-direction: column;
+              width: 100%;
+              background-color: #050833;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              text-align: center;
+              animation: slide-down 0.5s forwards;
+          }
+
+          .nav-links.active {
+              display: flex;
+          }
+
+          .menu-icon {
+              display: block;
+          }
+
+          .nav-links li {
+              width: 100%;
+          }
+
+          .nav-links a {
+              width: 100%;
+              justify-content: center;
+              padding: 1em;
+              transition: background 0.3s, transform 0.3s;
+          }
+        }
+</style>
+<body>
+          <nav class="navbar">
+            <div class="logo">
+              <a href="index.html"><img src="Tech_Solutions-Logo.png" alt="logo" style="width: 100px;"></a>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+              <span class="material-icons">menu</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+              <li><a href="index.html"><span class="material-icons">home</span> Home</a></li>
+              <li><a href="about.html"><span class="material-icons">business</span> About Company</a></li>
+              <li><a href="service.html"><span class="material-icons">build</span> Services</a></li>
+              <li><a href="blog.html"><span class="material-icons">rss_feed</span> Our Blog</a></li>
+              <li><a href="contact.html"><span class="material-icons">contact_mail</span> Contact Us</a></li>
+            </ul>
+          </nav>
+          <center>
+<div class="blog1">
+        <h1><u>"The Rise of Quantum Computing: A New Era of Technology
+"</u></h1>
+        <img src="https://quantumai.google/static/site-assets/images/marketing/quantum-computing/hero-heading-mobile.jpg" style="height: 400px;"></a>
+        <p>Quantum computing is poised to revolutionize the technology landscape, offering unprecedented processing power that could solve problems beyond the reach of classical computers. But what exactly is quantum computing, and how will it impact our future?</p>
+        
+  <p>What is Quantum Computing?
+  At its core, quantum computing harnesses the principles of quantum mechanics to perform computations. Unlike classical bits, which represent either 0 or 1, quantum bits or qubits can exist in multiple states simultaneously, thanks to superposition and entanglement.</p>
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfeQ8eNoc8znfz-3qHpsUo8WqTYNF63GjjQ&s" style="height: 400px;"></a>
+  <p>Quantum computing promises breakthroughs in various fields, including cryptography, drug discovery, financial modeling, and climate simulation. For instance, it could crack complex encryption codes in seconds, revolutionize medicine by simulating molecular interactions at an unprecedented scale, and optimize logistics for businesses.</p>
+        
+  <p>Despite its potential, quantum computing faces significant challenges. Building stable qubits, error correction, and the need for ultra-cold temperatures are among the hurdles researchers must overcome. However, with companies like IBM, Google, and Microsoft investing heavily in this technology, the future of quantum computing looks promising.
+</p>
+
+        <img src="https://www.einfochips.com/wp-content/uploads/2023/03/Quantum_Computing_in_Artificial_Intelligence_Around_the_Corner_Blog_Featured_Image-scaled-1.jpg" style="height: 400px;"></a>
+  <p>Quantum computing represents a leap forward in our ability to solve complex problems, offering exciting possibilities for the future. As research and development continue, we can expect this technology to unlock new realms of innovation and transformation across industries.
+</p>
+</div>
+            <footer style="background-color: black;color:white;padding: 5px;font-size: 0.9em;">
+              <center>
+                <p>2024 © All Rights Reserved by Tech Solutions</p>
+              </center>
+            </footer>
+</body>
+</html>  

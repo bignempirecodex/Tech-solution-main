@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Tech Solution</title>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<style>
+        .blog3{
+                padding: 20px;
+                border-radius: 10px;
+                background-color: white;
+                border: 1px solid black;
+                text-align: left;
+                width:80%;
+                margin: 20px;
+        }
+        body {
+
+                font-family: cursive;
+                background-color: skyblue ;
+
+        }
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: rgb(0, 6, 51);
+          padding: 1em 2em;
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+          transition: background-color 0.3s ease;
+        }
+
+        .navbar:hover {
+          background: rgb(0, 6, 51);
+        }
+
+        .logo {
+          font-size: 1.5em;
+          color: #e0f0ff;
+          font-weight: bold;
+        }
+
+        .menu-icon {
+          display: none;
+          cursor: pointer;
+          color: #e0f0ff;
+        }
+
+        .nav-links {
+          list-style: none;
+          display: flex;
+          gap: 1em;
+        }
+
+        .nav-links li {
+          position: relative;
+          overflow: hidden;
+        }
+
+        .nav-links a {
+          color: #e0f0ff;
+          text-decoration: none;
+          font-size: 1em;
+          padding: 0.5em 1em;
+          transition: background 0.3s, transform 0.3s;
+          display: flex;
+          align-items: center;
+        }
+
+        .nav-links a:hover {
+          background-color: #050851;
+          border-radius: 4px;
+          transform: scale(1.05);
+        }
+
+        .material-icons {
+          margin-right: 0.5em;
+          font-size: 1.2em;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+          .nav-links {
+              display: none;
+              flex-direction: column;
+              width: 100%;
+              background-color: #050833;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              text-align: center;
+              animation: slide-down 0.5s forwards;
+          }
+
+          .nav-links.active {
+              display: flex;
+          }
+
+          .menu-icon {
+              display: block;
+          }
+
+          .nav-links li {
+              width: 100%;
+          }
+
+          .nav-links a {
+              width: 100%;
+              justify-content: center;
+              padding: 1em;
+              transition: background 0.3s, transform 0.3s;
+          }
+        }
+</style>
+<body>
+          <nav class="navbar">
+            <div class="logo">
+              <a href="index.html"><img src="Tech_Solutions-Logo.png" alt="logo" style="width: 100px;"></a>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+              <span class="material-icons">menu</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+              <li><a href="index.html"><span class="material-icons">home</span> Home</a></li>
+              <li><a href="about.html"><span class="material-icons">business</span> About Company</a></li>
+              <li><a href="service.html"><span class="material-icons">build</span> Services</a></li>
+              <li><a href="blog.html"><span class="material-icons">rss_feed</span> Our Blog</a></li>
+              <li><a href="contact.html"><span class="material-icons">contact_mail</span> Contact Us</a></li>
+            </ul>
+          </nav>
+          <center>
+<div class="blog4">
+        <h1><u>"Exploring the World of Augmented Reality (AR)"</u></h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRftmoLpH_au3hl4_Jb3F6zWCly9AedYWvRg&s" style="height: 400px;"></a>
+        <p>Augmented Reality (AR) is blurring the lines between the digital and physical worlds, offering immersive experiences that enhance our perception of reality. This blog delves into the fascinating world of AR and its diverse applications.</p>
+        
+  <p>AR overlays digital information onto the real world, enhancing our perception and interaction with our surroundings. Unlike Virtual Reality (VR), which creates a completely immersive digital environment, AR enhances the real world with interactive elements.</p>
+        
+        <img src="https://bernardmarr.com/img/The%2010%20Best%20Real%20World%20Examples%20Of%20Augmented%20Reality.png" style="height: 400px;"></a>
+  <p>Gaming: AR has revolutionized gaming, with popular titles like Pokémon GO bringing digital creatures into our physical world.</p>
+  <p>Education: AR makes learning more engaging by providing interactive 3D models and simulations. For example, medical students can explore the human anatomy in detail using AR applications.</p>
+  <p>Retail: AR allows customers to visualize products in their environment before purchasing. Furniture companies like IKEA offer AR apps to see how items will look in their homes.</p>
+  <p>Navigation: AR enhances navigation apps by overlaying directions onto the real world, making it easier to find your way.</p>
+
+        <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2023/07/augmented-reality.png" style="height: 400px;"></a>
+  <p>The future of AR is bright, with advancements in technology making it more accessible and integrated into our daily lives. From AR glasses to advanced mobile applications, the potential for AR to transform various industries is immense.
+</p>
+  <p>Augmented Reality is reshaping how we interact with the world, offering immersive and interactive experiences across gaming, education, retail, and navigation. As AR technology evolves, it will continue to enhance and enrich our everyday lives.
+  </p>
+</div>
+            <footer style="background-color: black;color:white;padding: 5px;font-size: 0.9em;">
+              <center>
+                <p>2024 © All Rights Reserved by Tech Solutions</p>
+              </center>
+            </footer>
+</body>
+</html>  

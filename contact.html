@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Company</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+
+    <div class="menu-icon" id="menu-icon">
+      <span class="material-icons">menu</span>
+    </div>
+   <a href="index.html"><img src="Tech_Solutions-Logo.png" alt="logo" style="width: 200px;"></a>
+    </div>
+    <div class="menu-icon" id="menu-icon">
+      <span class="material-icons">menu</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><span class="material-icons">home</span> Home</a></li>
+      <li><a href="about.html"><span class="material-icons">business</span> About Company</a></li>
+      <li><a href="service.html"><span class="material-icons">build</span> Services</a></li>
+      <li><a href="blog.html"><span class="material-icons">rss_feed</span> Our Blog</a></li>
+      <li><a href="contact.html"><span class="material-icons">contact_mail</span> Contact Us</a></li>
+    </ul>
+  </nav>
+  <section>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Welcome to our Contact Us page! We're here to assist you with any questions, concerns, or feedback you may
+            have. Whether you're looking for more information about our services, need support, or want to share your
+            thoughts, we're always ready to listen and help.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <span class="material-symbols-outlined">
+                location_on
+              </span>
+              <p>Remote, Online</p>
+            </div>
+            <div class="information">
+              <span class="material-symbols-outlined">
+                mail
+              </span>
+              <p>techsolution612@gmail.com</p>
+            </div>
+            <div class="information">
+              <span class="material-symbols-outlined">
+                call
+              </span>
+              <p>+2348101220665</p>
+            </div>
+          
+             
+            
+             
+         
+          </div>
+          <a href="https://www.instagram.com/tech_solution612?igsh=OXF4YXppZXJOa2Zy"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHP2W0X8Bj9Wwou8Y5Iv2q_Aa-nME9SMwEAA&s"  width="13%" height="10%"></a>
+          <a href="https://www.facebook.com/profile.php?id=61562195913151&mibextid=ZbWKwL"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoekKKr0oVR5KHH4wdcY09SCZuS6z181hlxg&s"  width="13%" height="10%"></a>
+          <a href="https://chat.whatsapp.com/K9nS7faxLVX2ATn6H2jlB9"><img src="https://i.pinimg.com/736x/f3/53/5d/f3535dc3f95e71506f7c80755610176c.jpg"  width="13%" height="10%"></a>
+           <a href="https://www.youtube.com/@Tech.Solutions612"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCnQbLJZ3rJAv_wLXuHFJKxTO1GKMS0zhf8Q&s"  width="13%" height="10%"></a>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form id="contactForm" action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" required />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" required />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" required />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input" required></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer style="background-color: black;color:white;padding: 5px;font-size: 0.9em;">
+      <center>
+        <p>2024 © All Rights Reserved by Tech Solutions</p>
+      </center>
+    </footer>
+  </section>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBtEGd6ZzLuXP7bGaWcyREeObS6iWkz6QY",
+      authDomain: "tech-solutions-form.firebaseapp.com",
+      databaseURL: "https://tech-solutions-form-default-rtdb.firebaseio.com",
+      projectId: "tech-solutions-form",
+      storageBucket: "tech-solutions-form.appspot.com",
+      messagingSenderId: "153790625550",
+      appId: "1:153790625550:web:832d7ea5fede5ed3bec95f",
+      measurementId: "G-73YBPDWFC8"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Reference to the Firebase Realtime Database
+    var database = firebase.database();
+
+    // Form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Get form values
+      var name = document.getElementsByName('name')[0].value;
+      var email = document.getElementsByName('email')[0].value;
+      var phone = document.getElementsByName('phone')[0].value;
+      var message = document.getElementsByName('message')[0].value;
+
+      // Push form data to Firebase Realtime Database
+      database.ref('contacts').push({
+        name: name,
+        email: email,
+        phone: phone,
+        message: message
+      }).then(function () {
+        alert('Your message has been sent successfully!');
+        document.getElementById('contactForm').reset();
+      }).catch(function (error) {
+        alert('Failed to send message. Please try again.');
+        console.error(error);
+      });
+    });
+  </script>
+</body>
+
+</html>
